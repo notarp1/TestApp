@@ -29,3 +29,10 @@ fun MenuButton(text: String = "Knap", onClick: ()->Unit){
         Text(text = text, color = Color.Black)
     }
 }
+
+@Composable
+fun MenuButton2(text: String = "Knap", onClick: ()->Unit){
+    OutlinedButton(onClick = { onClick()}, modifier = Modifier.width(200.dp)) {
+        Text(text = text, color = Color.Black)
+    }
+}
